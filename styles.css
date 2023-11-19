@@ -1,0 +1,189 @@
+:root {
+    /* Primary brand color, based on the car's orange */
+    --primary-color: #E76F00;
+
+    /* Complementary dark shade for text and accents */
+    --secondary-color: #333333;
+
+    /* Light shade for backgrounds, provides contrast */
+    --background-color: #F8F8F8;
+
+    /* Accent color for call to actions and highlights */
+    --accent-color: #FFD500;
+
+    /* Additional accent color for design elements */
+    --additional-accent-color: #FFFFFF;
+
+    /* Navbar and footer color, darker shade for grounding */
+    --navbar-footer-color: #1A1A1A;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Poppins, sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+.background-image {
+    background-image:url(Images/Background.png);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+header {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#logo-image {
+    margin-left: 30px;
+}
+
+#menu {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    height: 100%;
+    width: 40%;
+    margin-right: 10%;
+}
+
+.menu-item {
+    width: 100%;
+}
+
+#menu a {
+    text-decoration: none;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    color: white;
+    font-size: 1.5rem;
+    border-top: 0;
+}
+
+#menu a:hover {
+    background-color: rgba(255, 255, 255, 0.75);
+    color: rgb(255, 102, 0);
+}
+
+h1 {
+    font-size: 94px;
+}
+
+h2 {
+    font-size: 58px;
+}
+
+h3 {
+    font-size: 30px;
+    font-style: italic;
+}
+
+h1, h2, h3 {
+    color: white;
+}
+
+#home {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 15%;
+}
+
+#home, #rules, #contact {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(90deg, #a12f01, #f28646 );
+}
+
+#rules, #contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 3%;
+}
+
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#enter-button {
+    margin-top: 30px;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 30px;
+    border-radius: 15% 15% 15% 15%;
+    font-weight: 900;
+    animation: Pulse 3s infinite;
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 1);
+    color: rgb(255, 102, 0);
+}
+
+#enter-button:hover {
+    animation: Pulse 0.5s infinite;
+    background-color: rgba(0, 0, 0, 75%);
+    color: RGB(255, 255, 255);
+}
+
+@keyframes Pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 40px;
+    color: white;
+    background-color: transparent;
+    padding: 0 30px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+
+
+.text-container .highlight {
+    color: var(--primary-color);
+    text-shadow: -3px -3px 0 white, 3px 3px 0 white;
+}
+
+.text-container .accent {
+    color: var(--accent-color);
+}
+
+
+
+
+/* f28646 - light-orange
+/* a12f01 - dark-orange
