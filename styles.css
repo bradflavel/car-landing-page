@@ -262,39 +262,117 @@ footer {
     background: rgba(0, 0, 0, 0.3); /* Darken on hover */
 }
 
-.enter-container {
-    margin: 0 auto;
-    width: 50%;
-    background-color: rgba(0, 0, 0, 0.5);
-    height: 60%;
-    display: flex;
-    border-radius: 25% 25%;
-}
-
-.enter-description-container {
-    padding: 50px;
-    background-color: white;
-    color: black;
-    height: 100%;
-    flex-basis: 40%;
-    text-align: justify;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 25% 0 0 25%;
-}
 
 .enter-description-container p:last-of-type {
     margin-top: 30px;
 }
 
+.enter-container {
+    margin: 0 auto;
+    width: 60%; /* Adjusted for better form visibility */
+    background-color: rgba(0, 0, 0, 0.5);
+    height: auto; /* Adjusted for content size */
+    display: flex;
+    border-radius: 25px; /* Smoothed the border-radius */
+    overflow: hidden; /* To respect border-radius of child elements */
+    padding: 20px; /* Added padding for spacing */
+}
+
+.enter-description-container {
+    padding: 20px;
+    background-color: white;
+    color: var(--secondary-color); /* Consistent text color */
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Align text to start */
+}
+
 .enter-form-container {
-    background-color: red;
+    background-color: var(--primary-color); 
     color: white;
-    height: 100%;
     flex-basis: 60%;
-    border-radius: 0 25% 25% 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.enter-form-container h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.enter-form-container form {
+    width: 90%; 
+    margin: 30px auto;
+}
+
+.questions-and-responses {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 55% 45%; 
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.form-row label {
+    text-align: right; /* Aligns labels to the right for better alignment with inputs */
+    padding-right: 10px; /* Adds spacing between label and input */
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"],
+.form-row input[type="tel"],
+.form-row input[type="date"] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-row input[type="checkbox"] {
+    grid-column: 2 / 3; /* Position checkboxes in the second column */
+    justify-self: start; /* Align checkboxes to the start of the second column */
+    width: 20px; /* Checkbox width */
+    height: 20px; /* Checkbox height */
+    margin-left: 0; /* Remove any left margin */
+}
+
+.submit-row {
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.submit-row input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    width: auto; /* Auto width for button */
+    font-size: 18px;
+}
+
+.submit-row input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+
+
+.bolden {
+    font-weight: 900;
 }
 
 

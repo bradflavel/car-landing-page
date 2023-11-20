@@ -42,10 +42,51 @@
             <h1 id="enter-title">Enter the Giveaway</h1>
             <div class="enter-container">
                 <div class="enter-description-container">
-                    <p>You're only one form away from being in the running to winning a brand new Zenith Strato valued at $69,990.</p>
-                    <p>Make sure you have read through the entry requirements to ensure you're eligible. Entries close on the 22nd of February 2024 so get in fast.</p>
+                    <p>You're only one form away from being in the running to winning a brand new <span class="bolden">Zenith Strato</span> valued at <span class="bolden">$69,990</span>.</p>
+                    <p>Make sure you have read through the entry requirements to ensure you're eligible. Entries close on the <span class="bolden">22nd of February 2024</span> so get in fast.</p>
                 </div>
-                <div class="enter-form-container"><h1>Form</h1></div>
+                <div class="enter-form-container">
+                    <form action="/submit-entry" method="post">
+                        <div class="questions-and-responses">
+                            <div class="form-row">
+                                <label for="fullName">Full Name:</label>
+                                <input type="text" id="fullName" name="fullName" required>
+                            </div>
+                            <div class="form-row">
+                                <label for="email">Email Address:</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-row">
+                                <label for="phone">Phone Number:</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-row">
+                                <label for="dob">Date of Birth:</label>
+                                <input type="date" id="dob" name="dob" required>
+                            </div>
+                            <div class="form-row">
+                                <label for="address">Address:</label>
+                                <input type="text" id="address" name="address" required>
+                            </div>
+                            <div class="form-row">
+                                <label for="licenseNumber">Driver's License Number:</label>
+                                <input type="text" id="licenseNumber" name="licenseNumber" required>
+                            </div>
+                            <div class="form-row">
+                                <label for="marketingOptIn">Opt-In for Marketing Emails:</label>
+                                <input type="checkbox" id="marketingOptIn" name="marketingOptIn" checked="checked">
+                            </div>
+                            <div class="form-row">
+                                <label for="terms" id="terms-label">I agree to the <a href="#terms-and-conditions" target="_blank">Terms and Conditions</a>:</label>
+                                <input type="checkbox" id="terms" name="terms" required>
+                            </div>
+                        </div>
+                        <div class="submit-row">        
+                            <input type="submit" value="Enter Giveaway">
+                        </div>
+                    </form>
+                </div>
+                
             </div>
         </section>
         <footer>
