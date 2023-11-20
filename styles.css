@@ -96,6 +96,7 @@ h3 {
 h1, h2, h3 {
     color: white;
     text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 #home {
@@ -117,7 +118,6 @@ h1, h2, h3 {
     border-bottom: 40px solid var(--navbar-footer-color);
 }
 
-
 #rules, #enter-giveaway {
     flex-direction: column;
     align-items: center;
@@ -125,10 +125,18 @@ h1, h2, h3 {
     padding-top: 80px;
 }
 
-#rules-title, #enter-title {
-    font-size: calc(3vw + 10px);
+#rules {
+    padding-top: 40px;
 }
 
+#enter-giveaway {
+    padding-top: 80px;
+}
+
+#enter-title, #rules-title {
+    font-size: calc(3vw + 10px);
+    margin-bottom: 70px;
+}
 
 
 .text-container {
@@ -137,7 +145,6 @@ h1, h2, h3 {
     justify-content: center;
     align-items: center;
     width: 50%;
-    
 }
 
 .image-container {
@@ -146,8 +153,6 @@ h1, h2, h3 {
     justify-content: center;
     width: 50%;
     margin-left: -5%;
-    
-    
 }
 
 #car {
@@ -205,36 +210,94 @@ footer {
     left: 0;
 }
 
-
-
-.text-container .highlight {
-    color: var(--primary-color);
-    text-shadow: -3px -3px 0 white, 3px 3px 0 white;
+.highlight {
+    color: #FFD700;
+    font-weight: bold;
 }
 
-.text-container .accent {
-    color: var(--accent-color);
+.brand-name {
+    color: white;
+    font-style: italic;
+    text-decoration: underline;
 }
 
-#rules-description, #rules-list {
-    margin-top: 100px;
-    width: 50%;
-    font-weight: 900;
+.accent {
+    color: white;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+    font-size: 1.2em;
+}
+
+#rules::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white overlay */
+    z-index: -1;
+}
+
+#rules-description {
+    max-width: 800px;
+    margin: 0 auto 2em;
+    font-size: 1.25rem;
 }
 
 #rules-list {
     text-align: justify;
+    margin-top: 25px;
 }
 
 .rule-item {
-    padding: 10px 0;
-    font-weight: 900;
-    font-size: 20px;
+    background: rgba(0, 0, 0, 0.2); /* Slight dark background for each item */
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+    transition: background-color 0.3s;
+}
+
+.rule-item:hover {
+    background: rgba(0, 0, 0, 0.3); /* Darken on hover */
+}
+
+.enter-container {
+    margin: 0 auto;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 60%;
+    display: flex;
+    border-radius: 25% 25%;
+}
+
+.enter-description-container {
+    padding: 50px;
+    background-color: white;
+    color: black;
+    height: 100%;
+    flex-basis: 40%;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25% 0 0 25%;
+}
+
+.enter-description-container p:last-of-type {
+    margin-top: 30px;
+}
+
+.enter-form-container {
+    background-color: red;
+    color: white;
+    height: 100%;
+    flex-basis: 60%;
+    border-radius: 0 25% 25% 0;
 }
 
 
-/* f28646 - light-orange
-/* a12f01 - dark-orange */
 
 @media only screen and (max-width: 1300px) {
     #home {
