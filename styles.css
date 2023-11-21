@@ -287,10 +287,11 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start; /* Align text to start */
+    border-radius: 25px;
 }
 
 .enter-form-container {
-    background-color: var(--primary-color); 
+    background-color: transparent; 
     color: white;
     flex-basis: 60%;
     padding: 20px;
@@ -329,12 +330,17 @@ footer {
     padding-right: 10px; /* Adds spacing between label and input */
 }
 
+.form-row label a {
+    color: white;
+}
+
 .form-row input[type="text"],
+.form-row input[type="number"],
 .form-row input[type="email"],
 .form-row input[type="tel"],
 .form-row input[type="date"] {
     width: 100%;
-    padding: 5px;
+    padding: 5px 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
