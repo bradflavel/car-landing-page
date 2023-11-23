@@ -2,7 +2,7 @@
 
 This project was one of my first projects that I did from start to finish without any assistance. I really enjoyed creating a pratical project like this that functions like a real landing page for a company giving away a car.
 
-## Objective
+## Objectives
 
 I wanted to be able to create a landing page by sticking to these conditions:
 

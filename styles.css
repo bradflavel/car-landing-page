@@ -158,8 +158,9 @@ h1, h2, h3 {
 #car {
     object-fit: contain;
     width: 100%;
+    max-width: 100%;
+    height: auto;
     overflow: hidden;
-    height: 50vh;
 }
 
 #enter-button {
@@ -415,3 +416,33 @@ footer {
         max-height: 30vh; 
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .text-container, .image-container {
+        width: 100%;
+        padding: 10px; /* Add some padding for spacing */
+    }
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #menu {
+        width: 100%; /* Full width for smaller screens */
+        flex-direction: column; /* Stack menu items vertically */
+        align-items: center; /* Center-align items */
+        margin-right: 0; /* Remove right margin */
+    }
+
+    .menu-item {
+        width: auto; /* Allow each item to size itself */
+        margin: 10px 0; /* Add some vertical spacing between items */
+    }
+
+    .menu a {
+        font-size: 20px;
+    }
+
+    
+}
+
