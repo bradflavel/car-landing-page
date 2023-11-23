@@ -240,9 +240,10 @@ footer {
 }
 
 #rules-description {
-    max-width: 800px;
+    max-width: 80%;
     margin: 0 auto 2em;
-    font-size: 1.25rem;
+    font-size: 1.75rem;
+    padding: 0 5%;
 }
 
 #rules-list {
@@ -445,7 +446,30 @@ footer {
         overflow-y: auto; /* Enables vertical scrolling for the form content */
         max-height: 450px; /* Slightly less than the container to ensure visibility */
     }
+
+    #rules-description {
+        font-size: calc(0.1 * 30vw);
+        padding: 0 20%;
+        margin: 0;
+        max-width: 100%;
+    }
+
+    #rules-list {
+        max-width: 100%;
+        padding: 0 10%;
+        margin: 5% 0 0 0;
+    }
+
+    .rule-item {
+        font-size: calc(0.15 * 8vw);
+        padding: 2.5%;
+    }
+
+    .enter-container {
+        width: 90%; /* Adjusted for better form visibility */
+    }
     
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -460,19 +484,17 @@ footer {
 
     #menu {
         width: 100%; /* Full width for smaller screens */
-        flex-direction: column; /* Stack menu items vertically */
-        align-items: center; /* Center-align items */
-        margin-right: 0; /* Remove right margin */
-        margin-top: 40px;
+        justify-content: flex-end;
     }
 
     .menu-item {
         width: auto; /* Allow each item to size itself */
         margin: 10px 0; /* Add some vertical spacing between items */
+        min-width: 75px;
     }
 
     #menu a {
-        font-size: 20px;
+        font-size: 16px;
         height: 100%;
         background-color: rgba(0, 0, 0, 0.5);
         color: white;
