@@ -531,9 +531,20 @@ footer {
     .enter-description-container {
         font-size: 13px;
         padding: 2.5%;
+        flex-basis: 25%;
     }
 
-    
+    .enter-form-container {
+        flex-basis: 75%;
+    }
+
+    .enter-container {
+        flex-direction: column;
+    }
+
+    .submit-row {
+        margin: 0;
+    }
 
 }
 
