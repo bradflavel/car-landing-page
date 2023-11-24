@@ -435,16 +435,9 @@ footer {
         justify-self: start; /* Align checkbox to the start */
     }
 
-    .enter-form-container {
-        display: block;
-        max-height: 500px; /* Adjust as needed */
-        overflow-y: auto; /* Enables vertical scrolling */
-    }
+
     
     .questions-and-responses {
-        display: block;
-        overflow-y: auto; /* Enables vertical scrolling for the form content */
-        max-height: 450px; /* Slightly less than the container to ensure visibility */
         font-size: 12px;
     }
 
@@ -544,7 +537,7 @@ footer {
     }
 
     .submit-row {
-        margin: 0;
+        margin-top: 10px;
     }
 
     #enter-title {
@@ -553,6 +546,11 @@ footer {
 
     .form-row {
         margin-bottom: 5px;
+    }
+
+    #enter-giveaway {
+        height: 100%;
+        min-height: 100vh;
     }
 }
 
