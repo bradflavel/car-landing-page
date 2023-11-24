@@ -540,6 +540,7 @@ footer {
 
     .enter-container {
         flex-direction: column;
+        margin-bottom: 30px;
     }
 
     .submit-row {
