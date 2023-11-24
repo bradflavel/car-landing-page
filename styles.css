@@ -550,5 +550,9 @@ footer {
     #enter-title {
         margin-bottom: 30px;
     }
+
+    .form-row {
+        margin-bottom: 5px;
+    }
 }
 
