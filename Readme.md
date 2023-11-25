@@ -48,4 +48,4 @@ Even the most basic of projects can teach you a lot. Some of the things that I l
 4. It's far easier to manipulate an image onto a dynamic background, rather than having a background-image.
 
 
-# Thank you for reading!
+# Enjoy!
